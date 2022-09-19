@@ -1,3 +1,4 @@
+//script.js
 console.log($.fn.jquery);
 setInterval(function(){
     $('td:not(:contains('+$("#search").val()+'))').parent().hide();
