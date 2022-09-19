@@ -1,6 +1,6 @@
 console.log($.fn.jquery);
 setInterval(function(){
-    $(".text").find('span:contains('+$("#search").val()+')').parent().show();
-    $(".text").find('span:not(:contains('+$("#search").val()+'))').parent().hide();
-    $("#searchnum").text($(".text:visible").length);
-},250);
+    $('td:not(:contains('+$("#search").val()+'))').parent().hide();
+    $('td:contains('+$("#search").val()+')').parent().show();
+    $("#searchnum").text("ヒット数:"+$("tr:visible").length);
+},500);
